@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="The_Insult_App_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="lwy-Ti-Lqn">
+                                <rect key="frame" x="-493" y="-402" width="1400" height="1700"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1700" id="40p-4g-onF"/>
+                                    <constraint firstAttribute="width" constant="1400" id="Kfk-q3-Jnh"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Aq-gl-TtE">
+                                <rect key="frame" x="20" y="59" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Wk4-cQ-beN"/>
+                                    <constraint firstAttribute="height" constant="50" id="Zki-Ht-kB3"/>
+                                    <constraint firstAttribute="width" secondItem="1Aq-gl-TtE" secondAttribute="height" multiplier="1:1" id="Zqb-PT-W7M"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="Info"/>
+                                <connections>
+                                    <action selector="InfoButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9CC-L0-9wO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="591-lK-qG3">
+                                <rect key="frame" x="-23" y="742" width="460" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="chq-a6-gSm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="35"/>
+                                <state key="normal" title="START INSULTING!" backgroundImage="StartInsultingButton">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="StartPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="PGu-qf-WGV"/>
+                                    <action selector="StartPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gp4-Si-GRn"/>
+                                    <action selector="StartPressedUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HVh-4x-ooM"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TheInsultAppTitle" translatesAutoresizingMaskIntoConstraints="NO" id="E08-TB-TBd">
+                                <rect key="frame" x="20" y="154" width="374" height="307"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="307" id="pOo-dT-QZG"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Two" translatesAutoresizingMaskIntoConstraints="NO" id="UJs-B4-rK0">
+                                <rect key="frame" x="129" y="261" width="236" height="213"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="236" id="bdJ-uF-oIu"/>
+                                    <constraint firstAttribute="width" secondItem="UJs-B4-rK0" secondAttribute="height" multiplier="236:213" id="hb9-fl-kR1"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONDITIONS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7x-R2-oUO">
+                                <rect key="frame" x="20" y="44" width="374" height="133"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="133" id="xqC-MJ-DnT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IxS-a6-GyW">
+                                <rect key="frame" x="-197" y="48" width="374" height="542"/>
+                                <string key="text">THE INSULT APP 2 is not intended for malicious use.  The insults generated inside this application are designed specifically to be used for humor and not as actual insults.  Furthermore, the SHARE feature is designed to enable users to share great quotes.  It is NOT designed to be used in any way, shape, or form to harass, bully, or pick on anyone ever.  Enjoy the many laughable insults that can be created!</string>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="k5K-5e-2aG" userLabel="Background2">
+                                <rect key="frame" x="-493" y="-402" width="1400" height="1700"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1400" id="gpb-Gb-UlP"/>
+                                    <constraint firstAttribute="height" constant="1700" id="wzo-FL-38s"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERq-rK-VM2">
+                                <rect key="frame" x="-23" y="742" width="460" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="7zn-9I-Rjw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="35"/>
+                                <state key="normal" title="CONTINUE!" backgroundImage="StartInsultingButton">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="ContinuePressed:" destination="BYZ-38-t0r" eventType="touchDown" id="Ugd-LT-ZIa"/>
+                                    <action selector="ContinuePressedUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ber-cB-gVG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rbo-8M-cHP">
+                                <rect key="frame" x="-23" y="742" width="460" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="n19-KV-ll8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="35"/>
+                                <state key="normal" title="CREATE INSULT!" backgroundImage="StartInsultingButton">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="CreateInsultPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="qUx-JU-YK7"/>
+                                    <action selector="CreateInsultPressedUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ogf-0y-po7"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bubble1" translatesAutoresizingMaskIntoConstraints="NO" id="uJX-qb-mdp">
+                                <rect key="frame" x="27" y="143" width="360" height="610"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="360" id="qb8-No-gdn"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O9E-xV-Fq7">
+                                <rect key="frame" x="231" y="44" width="163" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="3w3-qd-Vw1"/>
+                                    <constraint firstAttribute="width" constant="163" id="5OL-hG-VFN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <state key="normal" title="SHARE" backgroundImage="StartInsultingButton">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="ShareButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ETn-hZ-LMN"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow6" translatesAutoresizingMaskIntoConstraints="NO" id="KsE-V8-fcY">
+                                <rect key="frame" x="281" y="83" width="31" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="KsE-V8-fcY" secondAttribute="height" multiplier="31:52" id="HU6-Vk-TeG"/>
+                                    <constraint firstAttribute="width" constant="31" id="Yuf-99-a6o"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="894-CT-XWb">
+                                <rect key="frame" x="20" y="44" width="163" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Fuj-7i-Mee"/>
+                                    <constraint firstAttribute="width" constant="163" id="jB4-5q-hJs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <state key="normal" title="HOME" backgroundImage="StartInsultingButton">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="HomeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vvu-5j-3Rs"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shimmer" translatesAutoresizingMaskIntoConstraints="NO" id="rHJ-Fc-uCp">
+                                <rect key="frame" x="13" y="753" width="72" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="8xH-hr-Y4F"/>
+                                    <constraint firstAttribute="width" constant="72" id="QbH-IF-pYV"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W2x-wV-kMr">
+                                <rect key="frame" x="-387" y="-22" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press CREATE INSULT to generate a random insult!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXK-RK-iid">
+                                <rect key="frame" x="77" y="329" width="260" height="178"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="e7X-BU-ubQ"/>
+                                    <constraint firstAttribute="height" constant="178" id="wEX-6I-Qeu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3T-Ed-sNW">
+                                <rect key="frame" x="20" y="778" width="374" height="69"/>
+                                <color key="backgroundColor" red="0.39661593264248707" green="0.39661593264248707" blue="0.39661593264248707" alpha="0.96740206866197187" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="cJX-np-Rhv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="31"/>
+                                <size key="titleShadowOffset" width="1" height="2"/>
+                                <state key="normal" title="Okay">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="LeaveInfoScreenPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xke-WZ-MKJ"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="App Icon OG 1" translatesAutoresizingMaskIntoConstraints="NO" id="ycf-I8-PUp">
+                                <rect key="frame" x="20" y="143" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="9ei-BI-gRF"/>
+                                    <constraint firstAttribute="height" constant="100" id="hlZ-2H-vj9"/>
+                                    <constraint firstAttribute="width" secondItem="ycf-I8-PUp" secondAttribute="height" multiplier="1:1" id="zg7-M7-WL4"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INFO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0B-d1-MJR">
+                                <rect key="frame" x="20" y="44" width="374" height="91"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="91" id="GNW-WT-dGE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="52"/>
+                                <color key="textColor" white="1" alpha="0.96740206870000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="2"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="App Icon OG 2" translatesAutoresizingMaskIntoConstraints="NO" id="pfG-Ny-dGW">
+                                <rect key="frame" x="20" y="269" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="SKr-gE-R25"/>
+                                    <constraint firstAttribute="width" constant="100" id="ZfK-A6-qY6"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Insult App (2017) Developer: Tim Drevitch Version: 2.0.0" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQ6-5Z-lha">
+                                <rect key="frame" x="129" y="143" width="273" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="aMB-4E-qgK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="0.96740206870000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Insult App 2 (2021) Developer: Tim Drevitch Version: 1.0.2" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3a-jW-Slq">
+                                <rect key="frame" x="129" y="269" width="273" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="yfU-Tt-acb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="0.96740206870000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R3D-v0-qZS">
+                                <rect key="frame" x="129" y="213" width="124" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="Wgm-sd-g2G"/>
+                                    <constraint firstAttribute="height" constant="30" id="Z9b-hv-eD1"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="See on App Store!">
+                                            <attributes>
+                                                <color key="NSColor" systemColor="systemTealColor"/>
+                                                <font key="NSFont" metaFont="system" size="15"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="Insult1LinkPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bv3-nX-dxC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCi-6Z-G0O">
+                                <rect key="frame" x="129" y="339" width="124" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="1DU-XE-0bS"/>
+                                    <constraint firstAttribute="height" constant="30" id="Hg5-gX-nbn"/>
+                                </constraints>
+                                <state key="normal" title="See on App Store!">
+                                    <color key="titleColor" systemColor="systemTealColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="Insult2LinkPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KXW-ek-ciD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="1Aq-gl-TtE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="07d-2T-66q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E08-TB-TBd" secondAttribute="trailing" constant="20" id="0Lj-We-AeN"/>
+                            <constraint firstItem="UJs-B4-rK0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="217" id="0vJ-LH-AqC"/>
+                            <constraint firstAttribute="trailing" secondItem="591-lK-qG3" secondAttribute="trailing" constant="-23" id="12q-2Y-HqE"/>
+                            <constraint firstItem="s7x-R2-oUO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1g3-Hs-mEI"/>
+                            <constraint firstItem="591-lK-qG3" firstAttribute="top" secondItem="IxS-a6-GyW" secondAttribute="bottom" constant="15" id="1j0-gW-UJa"/>
+                            <constraint firstItem="894-CT-XWb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1jR-x2-mdS"/>
+                            <constraint firstAttribute="trailing" secondItem="ERq-rK-VM2" secondAttribute="trailing" constant="-23" id="1qS-8c-gtp"/>
+                            <constraint firstItem="iQ6-5Z-lha" firstAttribute="top" secondItem="W0B-d1-MJR" secondAttribute="bottom" constant="8" id="5MZ-RO-Epv"/>
+                            <constraint firstItem="E08-TB-TBd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="110" id="7n4-Bn-v63"/>
+                            <constraint firstItem="KsE-V8-fcY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="39" id="8Ap-S7-Pub"/>
+                            <constraint firstItem="591-lK-qG3" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="8Ua-pD-VL7"/>
+                            <constraint firstItem="k5K-5e-2aG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8Vy-jf-fmk"/>
+                            <constraint firstItem="uJX-qb-mdp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9KK-qX-Om6"/>
+                            <constraint firstItem="pfG-Ny-dGW" firstAttribute="top" secondItem="ycf-I8-PUp" secondAttribute="bottom" constant="26" id="Agg-jF-bLX"/>
+                            <constraint firstItem="lwy-Ti-Lqn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AkX-pT-psT"/>
+                            <constraint firstItem="V3T-Ed-sNW" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-15" id="Bwi-CU-1hd"/>
+                            <constraint firstItem="UJs-B4-rK0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="40" id="D0a-NX-utd"/>
+                            <constraint firstItem="IxS-a6-GyW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ELO-ZN-Vlm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O9E-xV-Fq7" secondAttribute="trailing" constant="20" id="EpJ-mH-tNO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KsE-V8-fcY" secondAttribute="trailing" constant="102" id="FJu-8n-tdk"/>
+                            <constraint firstItem="ERq-rK-VM2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-23" id="Hqa-Gy-swG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Rbo-8M-cHP" secondAttribute="bottom" id="JbJ-Fm-D3A"/>
+                            <constraint firstItem="W0B-d1-MJR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="LfW-PI-C7J"/>
+                            <constraint firstItem="E08-TB-TBd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="OX4-uc-cYp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u3a-jW-Slq" secondAttribute="trailing" constant="12" id="TGG-4f-fZn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V3T-Ed-sNW" secondAttribute="trailing" constant="20" id="Ttf-w2-Oza"/>
+                            <constraint firstItem="O9E-xV-Fq7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="UQK-Vc-eT9"/>
+                            <constraint firstItem="rHJ-Fc-uCp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="13" id="WZ0-UH-I6G"/>
+                            <constraint firstItem="W2x-wV-kMr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="X6H-53-3kS"/>
+                            <constraint firstItem="W2x-wV-kMr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZBg-Wt-35Z"/>
+                            <constraint firstAttribute="trailing" secondItem="Rbo-8M-cHP" secondAttribute="trailing" constant="-23" id="ao8-Wx-Fu9"/>
+                            <constraint firstItem="lwy-Ti-Lqn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bCr-f8-ME3"/>
+                            <constraint firstItem="R3D-v0-qZS" firstAttribute="leading" secondItem="ycf-I8-PUp" secondAttribute="trailing" constant="9" id="bob-po-vHU"/>
+                            <constraint firstItem="uJX-qb-mdp" firstAttribute="top" secondItem="O9E-xV-Fq7" secondAttribute="bottom" constant="39" id="cRE-Yb-e5f"/>
+                            <constraint firstItem="Rbo-8M-cHP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-23" id="eYf-AF-rPj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W0B-d1-MJR" secondAttribute="trailing" constant="20" id="err-oG-Kta"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ERq-rK-VM2" secondAttribute="bottom" id="fEK-oc-OyB"/>
+                            <constraint firstItem="V3T-Ed-sNW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fGX-U6-uRX"/>
+                            <constraint firstItem="s7x-R2-oUO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fJk-66-bey"/>
+                            <constraint firstAttribute="bottom" secondItem="W2x-wV-kMr" secondAttribute="bottom" id="fVF-Bs-LMF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iQ6-5Z-lha" secondAttribute="trailing" constant="12" id="hfG-DF-aC1"/>
+                            <constraint firstItem="pfG-Ny-dGW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="i3e-na-ikj"/>
+                            <constraint firstItem="ycf-I8-PUp" firstAttribute="top" secondItem="W0B-d1-MJR" secondAttribute="bottom" constant="8" id="jQz-R2-Fqd"/>
+                            <constraint firstItem="k5K-5e-2aG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k8G-aW-y9Y"/>
+                            <constraint firstItem="u3a-jW-Slq" firstAttribute="leading" secondItem="pfG-Ny-dGW" secondAttribute="trailing" constant="9" id="kUg-Tp-byS"/>
+                            <constraint firstItem="u3a-jW-Slq" firstAttribute="top" secondItem="R3D-v0-qZS" secondAttribute="bottom" constant="26" id="lAJ-K6-wtt"/>
+                            <constraint firstItem="ycf-I8-PUp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lZy-kf-HZq"/>
+                            <constraint firstItem="iQ6-5Z-lha" firstAttribute="leading" secondItem="ycf-I8-PUp" secondAttribute="trailing" constant="9" id="mL6-qj-ULi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IxS-a6-GyW" secondAttribute="trailing" constant="20" id="n5s-Nq-0CI"/>
+                            <constraint firstItem="rCi-6Z-G0O" firstAttribute="leading" secondItem="pfG-Ny-dGW" secondAttribute="trailing" constant="9" id="nlB-VD-FIU"/>
+                            <constraint firstItem="894-CT-XWb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="o7L-S9-ATT"/>
+                            <constraint firstItem="591-lK-qG3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-23" id="r95-QV-efO"/>
+                            <constraint firstItem="GXK-RK-iid" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-30" id="rYC-tj-AtQ"/>
+                            <constraint firstItem="R3D-v0-qZS" firstAttribute="top" secondItem="iQ6-5Z-lha" secondAttribute="bottom" id="sUW-3X-XsB"/>
+                            <constraint firstItem="W0B-d1-MJR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="t6I-ij-jy3"/>
+                            <constraint firstItem="IxS-a6-GyW" firstAttribute="top" secondItem="s7x-R2-oUO" secondAttribute="bottom" constant="8" id="uc8-Vf-eoD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rHJ-Fc-uCp" secondAttribute="bottom" constant="9" id="ur2-gs-xC8"/>
+                            <constraint firstItem="GXK-RK-iid" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v8Y-bC-kph"/>
+                            <constraint firstItem="W2x-wV-kMr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xQN-g6-hmV"/>
+                            <constraint firstItem="1Aq-gl-TtE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="y4l-m2-2Zt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s7x-R2-oUO" secondAttribute="trailing" constant="20" id="ylB-kv-CIK"/>
+                            <constraint firstItem="uJX-qb-mdp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ysG-Wg-ozG"/>
+                            <constraint firstItem="rCi-6Z-G0O" firstAttribute="top" secondItem="u3a-jW-Slq" secondAttribute="bottom" id="zUh-gm-3FA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Background" destination="lwy-Ti-Lqn" id="h38-xX-Jl9"/>
+                        <outlet property="Background2" destination="k5K-5e-2aG" id="4eU-W8-GUy"/>
+                        <outlet property="BubbleImage" destination="uJX-qb-mdp" id="90U-IM-QZM"/>
+                        <outlet property="ContinueButton" destination="ERq-rK-VM2" id="Jc3-Zf-5en"/>
+                        <outlet property="CreateInsultButton" destination="Rbo-8M-cHP" id="bl9-W3-JSH"/>
+                        <outlet property="HomeButton" destination="894-CT-XWb" id="eN1-Hs-MI1"/>
+                        <outlet property="InfoBackground" destination="W2x-wV-kMr" id="4Ni-ie-zSj"/>
+                        <outlet property="InfoButton" destination="1Aq-gl-TtE" id="7ie-Nf-Pjh"/>
+                        <outlet property="InfoLabel" destination="W0B-d1-MJR" id="bVJ-r9-9ci"/>
+                        <outlet property="InsultApp1Img" destination="ycf-I8-PUp" id="Xpg-MN-h1c"/>
+                        <outlet property="InsultApp1Label" destination="iQ6-5Z-lha" id="0zl-xB-fjh"/>
+                        <outlet property="InsultApp2Img" destination="pfG-Ny-dGW" id="Tse-46-zu4"/>
+                        <outlet property="InsultApp2Label" destination="u3a-jW-Slq" id="YTd-PR-ekA"/>
+                        <outlet property="InsultLabel" destination="GXK-RK-iid" id="UMT-yT-RuF"/>
+                        <outlet property="LeaveInfoButton" destination="V3T-Ed-sNW" id="BiE-Rw-2af"/>
+                        <outlet property="Link1" destination="R3D-v0-qZS" id="Lm0-0t-9t5"/>
+                        <outlet property="Link2" destination="rCi-6Z-G0O" id="zO1-v2-Ft8"/>
+                        <outlet property="ShareButton" destination="O9E-xV-Fq7" id="pVB-RJ-EcE"/>
+                        <outlet property="Shimmer" destination="rHJ-Fc-uCp" id="po5-e4-6d9"/>
+                        <outlet property="StartButton" destination="591-lK-qG3" id="yHK-Bp-P74"/>
+                        <outlet property="Terms" destination="s7x-R2-oUO" id="oQ9-14-GHT"/>
+                        <outlet property="TermsQuote" destination="IxS-a6-GyW" id="eHJ-TD-tcj"/>
+                        <outlet property="Two" destination="UJs-B4-rK0" id="RZu-c7-fYI"/>
+                        <outlet property="arrow" destination="KsE-V8-fcY" id="T3B-Gh-BVS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="90.401785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="App Icon OG 1" width="225" height="225"/>
+        <image name="App Icon OG 2" width="225" height="225"/>
+        <image name="Background" width="1224" height="1582"/>
+        <image name="Bubble1" width="800" height="712"/>
+        <image name="Info" width="326" height="314"/>
+        <image name="Shimmer" width="232" height="426"/>
+        <image name="StartInsultingButton" width="1528" height="302"/>
+        <image name="TheInsultAppTitle" width="586" height="316"/>
+        <image name="Two" width="268" height="318"/>
+        <image name="arrow6" width="244" height="400"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
